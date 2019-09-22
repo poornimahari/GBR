@@ -1,0 +1,181 @@
+<app-header-bottom></app-header-bottom>
+<section class="main-content new-member-registration">
+	<div class="container customwidth">
+		<div class="row customrow">
+			<aside class="col-md-3 sidebar-left">
+				<div class="sidebar-left-inside">
+					<img class="sidebar-left-img" src="assets/img/company-sidebarleft-img.png" alt="about">
+				</div>
+				
+			</aside>
+			<div class="col-md-5 middle-content">
+				<form action="	" class="new-member-registration-form">
+					<h2 class="main-title mb-0">New member registration</h2>
+					<small class="displayblk">Please do furnish the details as it mentioend below</small>
+					<div class="row">
+						<div class="col-md-10 custom-checkbox1">
+					        <div class="custom-control custom-checkbox custom-control-inline ml-0 pl-0">
+							    <input type="checkbox" class="custom-control-input" id="company" name="company">
+							    <label class="custom-control-label" for="company">Company</label>
+							</div>
+							<div class="custom-control custom-checkbox custom-control-inline">
+							    <input type="checkbox" class="custom-control-input" id="investor" name="investor">
+							    <label class="custom-control-label" for="investor">Investor</label>
+							</div>
+							<div class="custom-control custom-checkbox custom-control-inline">
+							    <input type="checkbox" class="custom-control-input" id="expert" name="expert">
+							    <label class="custom-control-label" for="expert">Expert</label>
+							</div>
+							<small class="displayblk">Choose the appropriate membership</small>
+							<div class="custom-control custom-checkbox custom-control-inline ml-0 pl-0">
+							    <input type="checkbox" class="custom-control-input" id="africa" name="africa">
+							    <label class="custom-control-label" for="africa">Africa</label>
+							</div>
+							<div class="custom-control custom-checkbox custom-control-inline">
+							    <input type="checkbox" class="custom-control-input" id="europe" name="europe">
+							    <label class="custom-control-label" for="europe">Europe</label>
+							</div>
+							<div class="custom-control custom-checkbox custom-control-inline">
+							    <input type="checkbox" class="custom-control-input" id="asia" name="asia">
+							    <label class="custom-control-label" for="asia">Asia</label>
+							</div>
+							<div class="custom-control custom-checkbox custom-control-inline">
+							    <input type="checkbox" class="custom-control-input" id="namerica" name="namerica">
+							    <label class="custom-control-label" for="namerica">N.America</label>
+							</div>
+							<div class="custom-control custom-checkbox custom-control-inline">
+							    <input type="checkbox" class="custom-control-input" id="samerica" name="samerica">
+							    <label class="custom-control-label" for="samerica">S.America</label>
+							</div>
+							<div class="custom-control custom-checkbox custom-control-inline">
+							    <input type="checkbox" class="custom-control-input" id="australia" name="australia">
+							    <label class="custom-control-label" for="australia">Australia</label>
+							</div>
+							<small class="displayblk">Choose the appropriate membership</small>
+						</div>
+						<div class="col-md-2 upload-btn-area">
+							<div class="upload-btn-wrapper">
+							  	<button class="btn uploadbtn">Click here to upload the profile photograph 90x90 pixels</button>
+							  	<input #file type="file" accept='image/*' (change)="preview(file.files)" />
+								<img [src]="imgURL" height="90" *ngIf="imgURL">
+							</div>
+						</div>
+					</div>
+					<hr/>
+					<div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Name of the company</label>
+                        <div class="col-md-6">
+                            <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Type here">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Name of the Person</label>
+                        <div class="col-md-3">
+                            <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Name">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Surname">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Foundation Year</label>
+                        <div class="col-md-3">
+                            <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Year">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Country">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Location of Headquarters</label>
+                        <div class="col-md-6">
+                            <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Type here">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Location of Branch/Branches</label>
+                        <div class="col-md-6">
+                            <select name="cars" class="custom-select">
+							    <option selected>Select Branch</option>
+							    <option value="volvo">Branch1</option>
+							    <option value="fiat">Branch2</option>
+							    <option value="audi">Branch3</option>
+							</select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Areas of Sepcification </label>
+                        <div class="col-md-6">
+                            <select name="cars" class="custom-select">
+							    <option selected>Select Areas of Sepcification </option>
+							    <option value="volvo">Branch1</option>
+							    <option value="fiat">Branch2</option>
+							    <option value="audi">Branch3</option>
+							</select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Annual revenue data  or Turn over data</label>
+                        <div class="col-md-6">
+                            <div class="custom-file">
+							    <input type="file" class="custom-file-input" id="customFile">
+							    <label class="custom-file-label" for="customFile">Upload</label>
+							  </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Requirements for partnership</label>
+                        <div class="col-md-6">
+                            <textarea  type="text" id="full_name" class="form-control" name="full-name" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Existing partners, if any</label>
+                        <div class="col-md-6">
+                            <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Type here">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Personal/business email </label>
+                        <div class="col-md-6">
+                            <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Your personal email will be used as your login user">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Telephone/Mobile</label>
+                        <div class="col-md-6">
+                            <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Telephone/Mobile">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Short description about the company</label>
+                        <div class="col-md-6">
+                            <textarea  type="text" id="full_name" class="form-control" name="full-name" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="full_name" class="col-md-6 col-form-label text-md-left">Membership duration</label>
+                        <div class="col-md-6 custom-checkbox1">
+					        <div class="custom-control custom-checkbox custom-control-inline ml-0 pl-0">
+							    <input type="checkbox" class="custom-control-input" id="1year" name="1year">
+							    <label class="custom-control-label" for="1year">1 Year</label>
+							</div>
+							<div class="custom-control custom-checkbox custom-control-inline ">
+							    <input type="checkbox" class="custom-control-input" id="2year" name="2year">
+							    <label class="custom-control-label" for="2year">2 Year</label>
+							</div>
+							<div class="custom-control custom-checkbox custom-control-inline ">
+							    <input type="checkbox" class="custom-control-input" id="3year" name="3year">
+							    <label class="custom-control-label" for="3year">3 Year</label>
+							</div>
+						</div>
+                    </div>
+                    <a class="btn btn-primary float-right" href="#" role="button">Next</a>
+				</form>
+			</div>
+			<aside class="col-md-4 side-bar">
+				<img class="sidebar-img" src="assets/img/sidebar-img.png" alt="">
+			</aside>
+		</div>
+	</div>
+</section>
